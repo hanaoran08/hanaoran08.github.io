@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hanaoran.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解">
+<meta property="og:url" content="https://hanaoran.github.io/2021/2K07QR1.html">
+<meta property="og:site_name" content="Har的小窝">
+<meta property="og:description" content="迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解：">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-02-05T13:57:13.326Z">
+<meta property="article:modified_time" content="2021-02-05T13:57:13.326Z">
+<meta property="article:author" content="Har">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://hanaoran.github.io/2021/2K07QR1.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+<script src="/lib/fireworks.js"></script>
+  <title>迎新春欢乐水题赛 & 第三届欢乐水题赛题解 | Har的小窝</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Har的小窝</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个菜鸡OIer</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://hanaoran.github.io/2021/2K07QR1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Har">
+      <meta itemprop="description" content="Har's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Har的小窝">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          迎新春欢乐水题赛 & 第三届欢乐水题赛题解
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-05 21:57:13" itemprop="dateCreated datePublished" datetime="2021-02-05T21:57:13+08:00">2021-02-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E6%AC%A2%E4%B9%90%E6%B0%B4%E9%A2%98%E8%B5%9B/" itemprop="url" rel="index"><span itemprop="name">第二届欢乐水题赛</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="迎新春欢乐水题赛-amp-第三届欢乐水题赛题解："><a href="#迎新春欢乐水题赛-amp-第三届欢乐水题赛题解：" class="headerlink" title="迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解："></a>迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解：</h1><a id="more"></a>
+
+<h2 id="A-重复的数字-B-LK喜欢的数字"><a href="#A-重复的数字-B-LK喜欢的数字" class="headerlink" title="A.重复的数字,B.LK喜欢的数字"></a>A.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T166381">重复的数字</a>,B.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T167425">LK喜欢的数字</a></h2><p>过水，跳过。</p>
+<hr>
+<h2 id="C-IOI"><a href="#C-IOI" class="headerlink" title="C.IOI"></a>C.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T167464">IOI</a></h2><p>原题为<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P6581">P6581 远大目标</a></p>
+<p>数学公式显然：$ans=O\times2-1$，但在 <code>C plus plus</code> 中，我们还需要考虑数据精度问题。</p>
+<p>首先，我们知道 <code>int </code>显然存不了 $2^{63}-1$ 量级的数据，所以我们考虑 <code>long long</code>，而 <code>long long</code> 在乘以 22 的时候会爆掉，所以我们要用 <code>unsigned long long</code>。</p>
+<p>但是，由于 <code>unsigned long long</code> 存不了负数，所以我们先用 <code>long long</code> 读入，转存 <code>unsigned long long</code> 最后输出，这样就可以了。</p>
+<p>同时，如果是非正数的情况，直接输出 0 就可以了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> a;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a;</span><br><span class="line">    <span class="keyword">if</span>(a &lt;= <span class="number">0</span>) &#123; <span class="built_in">cout</span> &lt;&lt; <span class="number">0</span>; <span class="keyword">return</span> <span class="number">0</span>; &#125;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> b = a;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="number">2</span> * b - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="D-乐于助人的LK"><a href="#D-乐于助人的LK" class="headerlink" title="D.乐于助人的LK"></a>D.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T167288">乐于助人的LK</a></h2><p>前置芝士：勾股定理</p>
+<blockquote>
+<p>当两短边的平方和等于一长边的平方，说明是直角三角形。</p>
+</blockquote>
+<p>注意点：</p>
+<ul>
+<li>记得开<code>long long</code></li>
+<li>在判断非直角三角形是否等腰时，要把所有边都判断一遍。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> ull;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> si(x) scanf(<span class="meta-string">&quot;%d&quot;</span>,&amp;x)</span></span><br><span class="line">ull a[<span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a[<span class="number">1</span>]&gt;&gt;a[<span class="number">2</span>]&gt;&gt;a[<span class="number">3</span>];</span><br><span class="line">	sort(a+<span class="number">1</span>,a+<span class="number">4</span>);</span><br><span class="line">	<span class="keyword">if</span>(a[<span class="number">1</span>]*a[<span class="number">1</span>]+a[<span class="number">2</span>]*a[<span class="number">2</span>]==a[<span class="number">3</span>]*a[<span class="number">3</span>])&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[<span class="number">1</span>]==a[<span class="number">2</span>]) <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;YES &amp;&amp; yes&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;YES &amp;&amp; no&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[<span class="number">1</span>]==a[<span class="number">2</span>] <span class="keyword">or</span> a[<span class="number">2</span>]==a[<span class="number">3</span>] <span class="keyword">or</span> a[<span class="number">1</span>]==a[<span class="number">3</span>]) <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;NO &amp;&amp; yes&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;NO &amp;&amp; no&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="E-contagious"><a href="#E-contagious" class="headerlink" title="E.contagious"></a>E.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T165637">contagious</a></h2><p>几乎原题，原题为<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1332">P1332 血色先锋队</a>，感染源数量变为1，没有原题中的领主，最后对所有时间取max即可。</p>
+<p>总体是一个比较简单的广搜，STL deque 大法好。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> ull;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> si(x) scanf(<span class="meta-string">&quot;%d&quot;</span>,&amp;x)</span></span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">int</span> mapp[<span class="number">1001</span>][<span class="number">1001</span>];</span><br><span class="line"><span class="keyword">int</span> ans[<span class="number">1001</span>][<span class="number">1001</span>];</span><br><span class="line"><span class="keyword">int</span> px,py;</span><br><span class="line"><span class="keyword">int</span> sum=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> _x[<span class="number">4</span>]=&#123;<span class="number">-1</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;,_y[<span class="number">4</span>]=&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">-1</span>,<span class="number">1</span>&#125;;</span><br><span class="line"><span class="built_in">deque</span>&lt;<span class="built_in">pair</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; &gt; q;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bfs</span><span class="params">()</span></span>&#123;</span><br><span class="line">	q.push_back(<span class="built_in">make_pair</span>(px,py));</span><br><span class="line">	<span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">		<span class="keyword">int</span> x=q.front().first,y=q.front().second;</span><br><span class="line">		q.pop_front();</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)&#123;</span><br><span class="line">			<span class="keyword">int</span> dx=x+_x[i],dy=y+_y[i];</span><br><span class="line">			<span class="keyword">if</span>(ans[dx][dy]==<span class="number">-1</span> <span class="keyword">and</span> dx&gt;<span class="number">0</span> <span class="keyword">and</span> dx&lt;=n <span class="keyword">and</span> dy&gt;<span class="number">0</span> <span class="keyword">and</span> dy&lt;=m)&#123;</span><br><span class="line">				q.push_back(<span class="built_in">make_pair</span>(dx,dy));</span><br><span class="line">				ans[dx][dy]=ans[x][y]+<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">			<span class="built_in">cin</span>&gt;&gt;mapp[i][j];</span><br><span class="line">			ans[i][j]=<span class="number">-1</span>;</span><br><span class="line">			<span class="keyword">if</span>(mapp[i][j]==<span class="number">1</span>) px=i,py=j;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	ans[px][py]=<span class="number">0</span>;</span><br><span class="line">	bfs();</span><br><span class="line">	<span class="keyword">int</span> a=INT_MIN;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=m;j++)&#123;</span><br><span class="line">			a=max(a,ans[i][j]); <span class="comment">//最长的感染时间就是全部的感染时间</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="F-爱翻车的lk"><a href="#F-爱翻车的lk" class="headerlink" title="F.爱翻车的lk"></a>F.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T166353">爱翻车的lk</a></h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2669">P2669 [NOIP2015 普及组] 金币</a> 的升级版，没什么好说的，不难。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> ull;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> si(x) scanf(<span class="meta-string">&quot;%d&quot;</span>,&amp;x)</span></span><br><span class="line">ll sum,k;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,x,w;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;x&gt;&gt;w;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=i;j++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> v=<span class="number">1</span>;v&lt;=i;v++)&#123;</span><br><span class="line">				sum+=x;</span><br><span class="line">				x+=w;</span><br><span class="line">			&#125;</span><br><span class="line">			k++;</span><br><span class="line">			<span class="keyword">if</span>(k==n)&#123;</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">				<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">			&#125; </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="G-数字谜图"><a href="#G-数字谜图" class="headerlink" title="G.数字谜图"></a>G.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T167469">数字谜图</a></h2><p>众所周知，这是一道十分……的大模拟，我只有90分，调不出来/kk</p>
+<p>出题人来发题解吧。</p>
+<hr>
+<h2 id="H-Kakutani"><a href="#H-Kakutani" class="headerlink" title="H.Kakutani"></a>H.<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/T167477">Kakutani</a></h2><p>时间差距巨大，wsh 的 std 300ms，我的大暴力4s（</p>
+<h3 id="暴力出奇迹！！"><a href="#暴力出奇迹！！" class="headerlink" title="暴力出奇迹！！"></a>暴力出奇迹！！</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">    <span class="keyword">while</span>(n--)&#123;</span><br><span class="line">        <span class="built_in">string</span> a;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;a;</span><br><span class="line">        <span class="keyword">int</span> f1=<span class="number">0</span>,f2=<span class="number">0</span>,f3=<span class="number">0</span>; <span class="comment">//f1-&gt;4,f2-&gt;7,f3-&gt;13</span></span><br><span class="line">        <span class="keyword">do</span>&#123;</span><br><span class="line">            f1=<span class="number">0</span>,f2=<span class="number">0</span>,f3=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.size();i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;4&#x27;</span>) a.erase(i,<span class="number">1</span>); <span class="comment">//有4,7,13就直接删掉</span></span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;7&#x27;</span>) a.erase(i,<span class="number">1</span>);</span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;1&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]==<span class="string">&#x27;3&#x27;</span>) a.erase(i,<span class="number">2</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.size();i++)&#123; <span class="comment">//检查是否还存在4,7,13</span></span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;4&#x27;</span>) f1++;</span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;7&#x27;</span>) f2++;</span><br><span class="line">                <span class="keyword">if</span>(a[i]==<span class="string">&#x27;1&#x27;</span> <span class="keyword">and</span> a[i+<span class="number">1</span>]==<span class="string">&#x27;3&#x27;</span>) f3++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">while</span>(f1 <span class="keyword">or</span> f2 <span class="keyword">or</span> f3); <span class="comment">//不存在才能退出循环</span></span><br><span class="line">        <span class="keyword">if</span>(a.size()&gt;<span class="number">0</span>) <span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>; </span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;0&quot;</span>&lt;&lt;<span class="built_in">endl</span>; <span class="comment">//删没了输出0</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>本次比赛难度较为简单（我的感觉，<del>除了那道大模拟</del>；</p>
+<p>原题数量较多，3/8，不过也正常，毕竟 noip也出过自己的原题[doge]；</p>
+<p>报名人数较少，只有第二届的$\dfrac{2}{3}$，（迷惑）；</p>
+<p>但确实是一个适合我们测试实力的机会<del>赚积分的机会</del>。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/3PBJCC0.html" rel="prev" title="数学课">
+      <i class="fa fa-chevron-left"></i> 数学课
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%8E%E6%96%B0%E6%98%A5%E6%AC%A2%E4%B9%90%E6%B0%B4%E9%A2%98%E8%B5%9B-amp-%E7%AC%AC%E4%B8%89%E5%B1%8A%E6%AC%A2%E4%B9%90%E6%B0%B4%E9%A2%98%E8%B5%9B%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">迎新春欢乐水题赛 &amp; 第三届欢乐水题赛题解：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97-B-LK%E5%96%9C%E6%AC%A2%E7%9A%84%E6%95%B0%E5%AD%97"><span class="nav-number">1.1.</span> <span class="nav-text">A.重复的数字,B.LK喜欢的数字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-IOI"><span class="nav-number">1.2.</span> <span class="nav-text">C.IOI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D-%E4%B9%90%E4%BA%8E%E5%8A%A9%E4%BA%BA%E7%9A%84LK"><span class="nav-number">1.3.</span> <span class="nav-text">D.乐于助人的LK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E-contagious"><span class="nav-number">1.4.</span> <span class="nav-text">E.contagious</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F-%E7%88%B1%E7%BF%BB%E8%BD%A6%E7%9A%84lk"><span class="nav-number">1.5.</span> <span class="nav-text">F.爱翻车的lk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#G-%E6%95%B0%E5%AD%97%E8%B0%9C%E5%9B%BE"><span class="nav-number">1.6.</span> <span class="nav-text">G.数字谜图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#H-Kakutani"><span class="nav-number">1.7.</span> <span class="nav-text">H.Kakutani</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%B4%E5%8A%9B%E5%87%BA%E5%A5%87%E8%BF%B9%EF%BC%81%EF%BC%81"><span class="nav-number">1.7.1.</span> <span class="nav-text">暴力出奇迹！！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">1.8.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Har</p>
+  <div class="site-description" itemprop="description">Har's Blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Har</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">13k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">21 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
